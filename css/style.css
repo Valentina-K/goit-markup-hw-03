@@ -13,6 +13,23 @@
     --second-font-family:Raleway, sans-serif;
 
 }
+/*reset*/
+h1, h2, h3, p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.link{
+    text-decoration: none;
+}
+.list{
+    list-style: none;
+}
+
 body{
     font-family: var(--main-font-family);
     font-size: 14px;
@@ -31,22 +48,32 @@ body{
     clip: rect(0 0 0 0);
 }
 .header-page{
+    padding-top: 24px;
+    padding-bottom: 25px;
     border-bottom: 1px solid var(--border-color); 
 }
 .container{
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.link{
-    text-decoration: none;
+.flex-cont{
+    display: flex;
+    align-items: center;
 }
-.list{
-    list-style: none;
+.header-flex{
+    justify-content: space-between;
 }
+
 .logo{
     font-family: var(--second-font-family);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+
+    margin-right: 94px;
 }
 .logo-blue{
     color:var(--accent-color);
@@ -57,8 +84,12 @@ body{
 .logo-white{
     color:var(--white-color);
 }
+.nav-list:not(:last-child){
+    margin-right: 50px;
+}
 .nav{
     color:var(--second-text-color);
+    
 }
 .nav:hover,.nav:focus{
     color:var(--accent-color);
@@ -78,6 +109,9 @@ body{
     letter-spacing: 0.02em;
 }
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 94px;
     background-color: var(--bg-color);
 }
 .hero-title{
@@ -87,22 +121,25 @@ body{
     letter-spacing: 0.06em;
     color:var(--white-color);
     text-align: center;
-    text-transform: uppercase;    
+    text-transform: uppercase;   
+    
+    margin-bottom: 30px;
 }
 .button{
     border-radius: 4px;
-    display:inline-block;
+    border:none;
+    display: block;
     
     font-family: var(--main-font-family);
     font-size: 16px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
     cursor: pointer;
 }
 .hero-button{
-    padding: 10px 32px;
+    min-width: 216px;
+    padding: 10px 22px;
+    margin-left: auto;
+    margin-right: auto;
+
     font-style: normal;
     font-weight: 700;    
     line-height: 1.88;
@@ -110,35 +147,77 @@ body{
     color:var(--white-color);
     background-color: var(--accent-color);    
 }
+.uniq-section{
+    margin-bottom: 94px;
+}
+.uniq-flex-cont{
+    display: flex;
+    align-items: flex-start;
+}
+.uniq-list:not(:last-child){
+    margin-right: 30px;
+}
 .uniq-title{
     font-size: 14px;
     color:var(--second-text-color);
     text-transform: uppercase; 
+
+    margin-bottom: 10px;
 }
 .uniq-text{
     line-height: 1.71;
+}
+.work-section{
+    margin-bottom: 94px;
+}
+.team-section{
+    background-color: var(--section-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .section-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-
     color: var(--second-text-color);
+
+    margin-bottom: 50px;
+}
+.img-list:not(:last-child){
+    margin-right: 30px;
 }
 .team{    
     line-height: 1.19;
+    text-align: center;
+}
+.team > img{
+    margin-bottom: 30px;
+}
+.team-list:not(:last-child){
+    margin-right: 30px;
 }
 .team-title{
     font-size: 16px;
     font-weight: 500;    
-    color:var(--second-text-color);      
+    color:var(--second-text-color);  
+
+    margin-bottom: 10px;    
 }
 .team-title + p{
     font-size: 16px;
 }
 .footer{
     background-color: var(--bg-color);    
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-logo{
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-list:not(:last-child){
+    margin-bottom: 10px;
 }
 .footer-link{
     color:var(--address-color);
@@ -152,12 +231,13 @@ body{
 }
 /*portfolio*/
 .filter{
+    padding: 6px 22px;
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
     color:var(--second-text-color);
+    background-color: var(--section-bg-color);
     min-width: 73px;
-    text-align: center;
 }
 .filter:hover, .filter:focus{
     background-color: var(--accent-color);
