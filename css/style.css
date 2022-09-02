@@ -19,6 +19,11 @@ h1, h2, h3, p{
     margin-top: 0;
     margin-bottom: 0;
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 ul{
     margin-top: 0;
     margin-bottom: 0;
@@ -79,8 +84,8 @@ body{
     padding-bottom: 25px;
     border-bottom: 1px solid var(--border-color); 
 }
-.header-flex{
-    justify-content: space-between;
+.header-address{
+    margin-left: auto;
 }
 .logo{
     font-family: var(--second-font-family);
@@ -138,7 +143,10 @@ body{
     text-align: center;
     text-transform: uppercase;   
     
+    width: 696px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .button{
     border-radius: 4px;
@@ -199,6 +207,8 @@ body{
 .team{    
     line-height: 1.19;
     text-align: center;
+    background-color: var(--white-color);
+    /*padding-bottom: 30px;*/
 }
 .team > img{
     margin-bottom: 30px;
@@ -217,7 +227,8 @@ body{
     margin-bottom: 10px;    
 }
 .team-title + p{
-    font-size: 16px;
+    font-size: 16px;    
+    margin-bottom: 30px;
 }
 /*footer*/
 .footer{
